@@ -90,8 +90,7 @@ def heart_disease():
         input_data = input_user_heart_disease()
 
     # show image heart disease
-    img = Image.open("heart-disease.jpg")
-    st.image(img, caption="Heart Disease", use_container_width=True)
+    st.image("heart-disease.jpg", caption="Heart Disease")
     if st.sidebar.button("Go!"):
         df = input_data
         st.write("Data yang dimasukkan:")
